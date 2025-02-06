@@ -58,7 +58,7 @@ To install the Gaia Node CLI, run the following command:
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 ```
 
-After installation, restart your terminal to make the CLI working.
+After installation, run this `source /root/.bashrc` or simply restart your terminal to make the gaianet CLI working.
 
 ---
 
