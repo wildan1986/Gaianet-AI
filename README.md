@@ -154,6 +154,11 @@ To interact with your node and earn XP, visit: [Pengu Gaia Domain](https://pengu
 * To return the screen, enter command: `screen -r gaiabot`
 * To stop and kill the bot, press `CTRL+C` inside the screen & run this command: `screen -XS gaiabot quit`
 
+It might gives you failed attempts which is because of networks floods, as you can see in the picture that I may get a successfull response after 3 or more attempts
+
+![image](https://github.com/user-attachments/assets/71ce30c6-2c3d-44b5-a3f5-b2a7781062bb)
+
+
 ---
 
 ## 10. Earn Points
