@@ -162,3 +162,5 @@ You are now earning points by following this guide. Points will be updated after
 * `Node Points`: Keep your node uptime and chat with the domain you have joined.
 
 ![image](https://github.com/user-attachments/assets/3b1c85cb-80a4-4cdc-b769-7b22282bd268)
+
+If you are a Local PC user (windows or linux), you simply can rerun your Node + ChatBot everyday at your start
