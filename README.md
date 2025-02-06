@@ -62,7 +62,7 @@ After installation, restart your terminal to make the CLI working.
 
 ---
 
-## Config Gaia Node
+## 4. Config Gaia Node
 By running this command, you download **Qwen2 0.5B Instruct** model and initialize your Node:
 
   ```bash
@@ -71,7 +71,7 @@ gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/
 
 ---
 
-## 4. Start Gaia Node
+## 5. Start Gaia Node
 By running a Gaia Node, we are actually deploying an AI Agent with a specific AI Model that we can chat with it.
 
 - **Start the Node**
@@ -86,7 +86,7 @@ By running a Gaia Node, we are actually deploying an AI Agent with a specific AI
 
 ---
 
-## 5. Register Your Node on Gaia Dashboard
+## 6. Register Your Node on Gaia Dashboard
 1. Run this command to get your **Node ID** and **Device ID**:
      ```bash
      gaianet info
@@ -96,7 +96,7 @@ By running a Gaia Node, we are actually deploying an AI Agent with a specific AI
 
 ---
 
-## 6. Joining a Domain
+## 7. Joining a Domain
 * You must join a domain and chat with the domain to earn **Node Points**
 * Chatting with your own node without a domain makes no sense
 1. Enter the following command in your terminal
@@ -117,7 +117,7 @@ By running a Gaia Node, we are actually deploying an AI Agent with a specific AI
 
 ---
 
-## 7. Chat with Your Node
+## 8. Chat with Your Node
 To interact with your node and earn XP, visit: [Pengu Gaia Domain](https://pengu.gaia.domains)
 
 * You need **Credit Balance** to be able to chat with your node.
@@ -129,7 +129,7 @@ To interact with your node and earn XP, visit: [Pengu Gaia Domain](https://pengu
 
 ---
 
-## 8. Run AutoChat Bot 
+## 9. Run AutoChat Bot 
 1. **Create an API Key**:
    - Go to [Gaia API Keys](https://www.gaianet.ai/setting/gaia-api-keys) and create a new key. Save the API key somewhere since you won't be able to access it again.
 
@@ -156,7 +156,7 @@ To interact with your node and earn XP, visit: [Pengu Gaia Domain](https://pengu
 
 ---
 
-## 9. Earn Points
+## 10. Earn Points
 You are now earning points by following this guide. Points will be updated after 24h or more.
 * `User Points`: Chat with your domain or other domains
 * `Node Points`: Keep your node uptime and chat with the domain you have joined.
