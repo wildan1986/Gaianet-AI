@@ -155,6 +155,7 @@ To interact with your node and earn XP, visit: [Pengu Gaia Domain](https://pengu
      ```
    - Now run this command to start the bot:
      ```bash
+     cd gaiabot
      python3 gaiabot.py
      ```
    - Enter your Gaia API key when prompted.
