@@ -1,9 +1,3 @@
-# Title: GaiaAI Chatbot
-# Created by: Moei
-# Twitter: https://x.com/0xMoei
-
-# The script will print the credit part and ask for the API key
-
 import requests
 import random
 import time
@@ -21,43 +15,113 @@ logging.basicConfig(
 )
 
 # Configuration
-BASE_URL = "https://pengu.gaia.domains"
+BASE_URL = "https://ruesandora.gaia.domains"
 MODEL = "qwen2-0.5b-instruct"
 MAX_RETRIES = 100  # Essentially infinite retries
 RETRY_DELAY = 5  # Seconds between retries
 QUESTION_DELAY = 1  # Seconds between successful questions
 
 QUESTIONS = [
-    "What is a neural network?",
-    "What is RNA?",
-    "What is deep learning?",
-    "What is a black hole?",
-    "What is a star?",
-    "What is dopamine?",
-    "What is algorithmic fairness?",
-    "What is turbulence?",
-    "What is a circular economy?",
-    "What is plasma in fusion research?",
-    "What is the role of mitochondria?",
-    "What is superposition in quantum mechanics?",
-    "What is the Big Bang theory?",
-    "What is cellular respiration?",
-    "What is a VPN?",
-    "What is a biosphere?",
-    "What is a Calabi-Yau manifold?",
-    "What is the hippocampus?",
-    "What is NP-complete?",
-    "What is ocean acidification?",
-    "What is electrical resistance?",
-    "What is a neurodegenerative disease?",
-    "What is entanglement in quantum computing?",
-    "What is neurofeedback?",
-    "What is artificial general intelligence?",
-    "What are monoclonal antibodies?",
-    "What is cosmic microwave background?",
-    "What is a quantum circuit?",
-    "What is gene editing?",
-    "What is a singularity in astrophysics?"
+    "What is no-code?",
+    "Why use no-code for websites?",
+    "Which no-code tools are popular for websites?",
+    "What to look for in a no-code platform?",
+    "How to start a no-code website?",
+    "How to add pages in no-code?",
+    "How to customize a no-code site's look?",
+    "Can no-code integrate with other services?",
+    "How to make a no-code site mobile-friendly?",
+    "How to launch a site with no-code?",
+    "Can no-code handle e-commerce?",
+    "What are no-code platform limitations?",
+    "How to manage SEO on a no-code site?",
+    "Where to learn about no-code web building?",
+    "Can professionals help with no-code websites?",
+    "How much does no-code website building cost?",
+    "Can I use custom domains with no-code?",
+    "How to get support for no-code issues?",
+    "How to update a no-code website?",
+    "Examples of no-code built websites?",
+    "What types of sites can no-code build?",
+    "How to add custom code in no-code?",
+    "How to add forms using no-code?",
+    "What hosting options does no-code offer?",
+    "How to create a landing page with no-code?",
+    "How to ensure site accessibility with no-code?",
+    "How to manage media in no-code?",
+    "How to add a blog with no-code?",
+    "Can no-code build business websites?",
+    "How to add email forms with no-code?",
+    "How to track analytics in no-code?",
+    "Can no-code make a portfolio site?",
+    "How to integrate social media with no-code?",
+    "Can no-code be used for non-profits?",
+    "How to add search functionality in no-code?",
+    "How to secure a no-code website?",
+    "How to publish a site with no-code?",
+    "How to add payments with no-code?",
+    "Can no-code make local business sites?",
+    "How to optimize speed in no-code?",
+    "How to add a favicon in no-code?",
+    "How to add Google Maps with no-code?",
+    "How to integrate email marketing in no-code?",
+    "How to add reviews with no-code?",
+    "How to add a contact form in no-code?",
+    "Where to find no-code troubleshooting help?",
+    "Can no-code create community websites?",
+    "How to add a photo gallery with no-code?",
+    "How to customize fonts with no-code?",
+    "How to use no-code for app development?",
+    "What are the benefits of no-code apps?",
+    "What kinds of apps can no-code make?",
+    "Which no-code platforms are best for apps?",
+    "How to pick a no-code app platform?",
+    "How to start designing an app with no-code?",
+    "How to manage data in no-code apps?",
+    "How to integrate services in no-code apps?",
+    "How to customize app UI with no-code?",
+    "How to manage users in no-code apps?",
+    "How to secure no-code apps?",
+    "How to authenticate users in no-code apps?",
+    "How to test no-code apps?",
+    "How to deploy no-code apps?",
+    "How to migrate data in no-code apps?",
+    "Can I add custom code to no-code apps?",
+    "How to add user content in no-code apps?",
+    "How to scale no-code apps?",
+    "Can no-code make mobile apps?",
+    "How to handle payments in no-code apps?",
+    "How to send notifications in no-code apps?",
+    "How to use push notifications in no-code?",
+    "How to track usage in no-code apps?",
+    "How to handle errors in no-code apps?",
+    "How to gather feedback on no-code apps?",
+    "How to integrate APIs in no-code apps?",
+    "Where to learn more about no-code apps?",
+    "How to manage databases in no-code apps?",
+    "Can no-code make real-time apps?",
+    "How to manage roles in no-code apps?",
+    "How to ensure privacy in no-code apps?",
+    "How to collaborate on no-code projects?",
+    "How to backup no-code apps?",
+    "How to maintain no-code apps?",
+    "Can no-code make enterprise apps?",
+    "How to integrate with other systems in no-code?",
+    "How to link to social media in no-code apps?",
+    "How to optimize no-code app performance?",
+    "How to engage users in no-code apps?",
+    "How to segment users in no-code apps?",
+    "How to personalize no-code apps?",
+    "How to onboard users in no-code apps?",
+    "How to retain users in no-code apps?",
+    "How to support users in no-code apps?",
+    "How to integrate CRM in no-code apps?",
+    "How to use marketing automation in no-code?",
+    "How to localize no-code apps?",
+    "How to comply with data laws in no-code?",
+    "How to visualize data in no-code apps?",
+    "How to manage file storage in no-code apps?",
+    "How to manage tasks in no-code apps?"
 ]
 
 def chat_with_ai(api_key: str, question: str) -> str:
@@ -126,9 +190,9 @@ def run_bot(api_key: str):
                 continue
 
 def main():
-    print("Title: GaiaAI Chatbot")
-    print("Created by: Moei")
-    print("Twitter: https://x.com/0xMoei")
+    print("Title: GaiaAI Chatbot (FORKED BY ENZIFIRI)")
+    print("Created by: Rues Community")
+    print("Twitter: https://x.com/Ruesandora0")
     api_key = input("Enter your API key: ")
     run_bot(api_key)
 
