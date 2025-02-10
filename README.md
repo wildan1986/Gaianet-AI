@@ -51,6 +51,15 @@ To run a Gaia node with the **Qwen2 0.5B Instruct** model, ensure your system me
 
 ---
 
+## Delete old Node (If you have installed before)
+```bash
+gaianet stop
+curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/uninstall.sh' | bash
+source /root/.bashrc
+```
+
+---
+
 ## 3. Install Gaia Node CLI
 To install the Gaia Node CLI, run the following command:
 
