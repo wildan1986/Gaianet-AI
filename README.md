@@ -88,10 +88,7 @@ By running a Gaia Node, we are actually deploying an AI Agent with a specific AI
   gaianet start
   ```
 
-- **Optional: Stop the Node**
-  ```bash
-  gaianet stop
-  ```
+> *If you needed to stop the node you can use: `gaianet stop`
 
 ---
 
